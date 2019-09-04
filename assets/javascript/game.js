@@ -1,28 +1,52 @@
 $( document ).ready(function (){
-var losses = $("#lose-text")
-var wins = $("#wins-text");
+var lossesText = $("#lose-text")
+var winsText = $("#wins-text");
+var crystals = ['crystal1','crystal2','crystal3','crystal4']
+var computerStartingNumber = $("#comp-score")
+var userTotalid = $("#user-total")
+var usertotal = ''
+
+startingNumberGen = function(){
+    var randomStartingNumber = (Math.floor(Math.random()* 70)+50)
+    return(randomStartingNumber)
+}
+
+fillCrystalArray = function(){
+numbergenC = function(){
+var randomNumberC = (Math.floor(Math.random()* 20)+1)
+return (randomNumberC)
+}
+for (var i = 0; i < crystals.length; i++) {
+     crystals[i] = numbergenC()
+}   
+
+}
+
+fillCrystalArray()
+startingNumberGen()
+computerStartingNumber.text(startingNumberGen())
+
+ var crystal1 = $("#crystal1")
+ var crystal2 = $("#crystal2")
+ var crystal3 = $("#crystal3")
+ var crystal4 = $("#crystal4")
+console.log(crystals[0])
 
 
-crystalGen1 = 
-Math.floor(Math.random()* 20)
-crystalGen2 = 
-Math.floor(Math.random()* 20)
-crystalGen3 = 
-Math.floor(Math.random()* 20)
-crystalGen4 = 
-Math.floor(Math.random()* 20)
+crystal1.click( function() {
+    crystals[0] + usertotal
+ })
+ crystal2.click( function() {
+    crystals[1] =+ usertotal
+})
+crystal3.click( function() {
+    crystals[2] =+ usertotal
+})
+crystal4.click( function() {
+    crystals[3] =+ usertotal
+})
 
-var crystal1 = crystalGen1;
-var crystal2 = crystalGen2; 
-var crystal3 = crystalGen3; 
-var crystal4 = crystalGen4; 
-
-crystal1 = $("#crystal1")
-crystal2 = $("#crystal1")
-crystal3 = $("#crystal1")
-crystal4 = $("#crystal1")
-
-console.log(crystal1, crystal2)
+console.log(usertotal)
 
 
 })

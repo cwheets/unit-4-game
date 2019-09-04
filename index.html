@@ -16,15 +16,17 @@
     </div>  
   <div class="container">
     <div class="directions row justify-content-start">
-        <p class="directions-text">You will be given a random number at the start of the game.</p>
-        <p class="directions-text">There are four crystals below. By clicking on a crystal you will add a speciic amount of points to your total score. </p>
-        <p class="directions-text">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
-        <p class="directions-text">The value of each crystal is hidden from you until you click on it.</p>
-        <p class="directions-text">Each time when the game starts, the game will change the values of each crystal. </p>
+      <ul>
+        <li class="directions-text">You will be given a random number at the start of the game.</li>
+        <li class="directions-text">There are four crystals below. By clicking on a crystal you will add a slieciic amount of lioints to your total score. </li>
+        <li class="directions-text">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
+        <li class="directions-text">The value of each crystal is hidden from you until you click on it.</li>
+        <li class="directions-text">Each time when the game starts, the game will change the values of each crystal. </li>
+      </ul>
     </div>
     <div id="score">
         <div class="">
-            <h2>0 <span id="comp-score"></span></h2>
+            <h2> <span id="comp-score">0</span></h2>
         </div>
         <div>
             <h2 class="">wins: <span id="wins-text"></span></h2>
@@ -33,11 +35,19 @@
             <h2 class="">losses: <span id="losses-text"></span></h2>
         </div>
     </div>
-    <div class="row-m justify-content-center">
-        <div id="crystal1" class="bg-primary col-m-2"></div>
-        <div id="crystal2" class="bg-primary col-m-2"></div>
-        <div id="crystal3" class="bg-primary col-m-2"></div>
-        <div id="crystal4" class="bg-primary col-m-2"></div>
+    <div class="row justify-content-center">
+        <div class="col-m-2 mr-2">
+            <img id="crystal1"  src="https://placekitten.com/200/200" alt="kitten"> 
+        </div>
+        <div class="col-m-2 mr-2">
+            <img id="crystal2" src="https://placekitten.com/200/200" alt="kitten"> 
+        </div>
+        <div class="col-m-2 mr-2">
+            <img id="crystal3" src="https://placekitten.com/200/200" alt="kitten">  
+        </div>
+        <div class="col-m-2">
+            <img id="crystal4" src="https://placekitten.com/200/200" alt="kitten"> 
+        </div>
     </div>
     <div>
         <p class=""> Your score total:</p>
