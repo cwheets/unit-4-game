@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="header bg-success row d-flex justify-content-center ">
+        <h1 class="header-text col-6-m">Crystal Collector</h1>
+    </div>  
+  <div class="container">
+    <div class="directions row justify-content-start">
+      <ul>
+        <li class="directions-text">You will be given a random number at the start of the game.</li>
+        <li class="directions-text">There are four crystals below. By clicking on a crystal you will add a slieciic amount of lioints to your total score. </li>
+        <li class="directions-text">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
+        <li class="directions-text">The value of each crystal is hidden from you until you click on it.</li>
+        <li class="directions-text">Each time when the game starts, the game will change the values of each crystal. </li>
+      </ul>
+    </div>
+    <div id="score">
+        <div class="">
+            <h2> <span id="comp-score">0</span></h2>
+        </div>
+        <div>
+            <h2>wins: <span id="wins-text"></span></h2>
+        </div>  
+        <div>
+            <h2>losses: <span id="losses-text"></span></h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-m-2 mr-2">
+            <img class="gem" id="crystal1"  src="https://placekitten.com/200/200" alt="kitten"> 
+        </div>
+        <div class="col-m-2 mr-2">
+            <img class="gem" id="crystal2" src="https://placekitten.com/200/200" alt="kitten"> 
+        </div>
+        <div class="col-m-2 mr-2">
+            <img class="gem" id="crystal3" src="https://placekitten.com/200/200" alt="kitten">  
+        </div>
+        <div class="col-m-2">
+            <img class="gem" id="crystal4" src="https://placekitten.com/200/200" alt="kitten"> 
+        </div>
+    </div>
+    <div>
+        <h1 class=""> Your score total:</h1>
+    </div>
+    <div class="">
+        <h2 class=""> <span id="user-total"></span></h2>
+    </div>
+  </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
